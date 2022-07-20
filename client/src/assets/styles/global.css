@@ -1,0 +1,562 @@
+.logo {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 121px;
+    text-align: center;
+    color: #49E6AD;
+    text-shadow: 0px 0px 0px #49E6AD;
+    margin-bottom: 40px;
+}
+
+.button {
+    height: 60px;
+    background: #49E6AD;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    transition: all 0.2s;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.button.sm {
+    height: 40px;
+    background: #49E6AD;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.button.primary {
+    background-color: #49E6AD;
+}
+
+.button.secondary {
+    background-color: #8162FF;
+}
+
+.button.primary:hover {
+    background-color: #00ffa2;
+}
+
+.button.secondary:hover {
+    background-color: #5735e2;
+}
+
+.input-simple {
+    background-color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 15px;
+}
+
+.error-msg {
+    color: #FF6767;
+    display: block;
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background: rgba(250,250,250, .5);
+    z-index: 1000;
+    border-radius: 25px;
+}
+
+.loader .spinner-border {
+    color: #fff;
+}
+
+.card-box {
+    width: 360px;
+    background-color: #3C3C3C;
+    border-radius: 25px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card-box h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.page-block {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.avatar .avatar-name {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 200px;
+}
+
+.friends-list {
+    flex: 1 1;
+}
+
+.card-box p {
+    color: #fff;
+    text-align: center;
+}
+
+.menu {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    z-index: 1000;
+}
+
+.menu .toggle {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 80px;
+    background-color: #49E6AD;
+    transition: all .2s;
+}
+
+.menu .toggle:hover {
+    background-color: #00ffa2;
+}
+
+.menu svg {
+    color: #fff;
+    font-size: 50px;
+}
+
+.menu .menu-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    height: max-content;
+    padding: 15px 0;
+    align-items: center;
+    background-color: #49E6AD;
+    border-radius: 44px;
+    transition: all .2s;
+}
+
+.menu .menu-list.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menu .menu-list.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.menu .menu-list a {
+    margin: 10px 0;
+}
+
+.friend-box {
+    display: flex;
+    align-items: center;
+}
+
+.friend-box h4 {
+    margin: 0;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.friend-box .action {
+    border: none;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.friend-box .action svg {
+    color: #fff;
+}
+
+.friend-box .action.red {
+    background-color: #ED4242;
+}
+
+.friend-box .action.green {
+    background-color: #49E5AD;
+}
+
+.friend-box .action.purple {
+    background-color: #8162FF;
+}
+
+.simplebar-content-wrapper {
+    position: unset!important;
+}
+
+.modal-box {
+    position: fixed;
+    z-index: 500;
+    background-color: rgba(0,0,0,.25);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+}
+
+.modal-box .card-box {
+    box-shadow: 0px 0px 20px -10px #000;
+}
+
+.game-title {
+    color: #fff;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+
+.characters-box {
+    display: flex;
+    width: 960px;
+    max-width: calc(100% - 50px);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.character-box {
+    width: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    height: 216px;
+    border-radius: 8px;
+    object-fit: cover;
+    display: flex;
+    margin: 10px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    transition: all .2s;
+}
+
+.character-box.is-dead {
+    filter: grayscale(1);
+    opacity: 0.3;
+}
+
+.character-box .character-img {
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.character-box .class-badge {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    top: 4px;
+    right: 4px;
+}
+
+.character-box .class-badge.warrior {
+    background-color: #ED4242;
+}
+
+.character-box .class-badge.wizard {
+    background-color: #8162FF;
+}
+
+.character-box .class-badge.cleric {
+    background-color: #76F24B;
+}
+
+.character-box .class-badge svg {
+    color: #fff;
+}
+
+.character-box .skill-badge {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    top: 28px;
+    right: 4px;
+    background-color: #2D2D2D;
+}
+
+.character-box .skill-badge svg {
+    color: #fff;
+}
+
+.character-box .picked-box {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(43, 43, 43, 0.76);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s;
+}
+
+.character-box .picked-box.hide {
+    opacity: 0;
+}
+
+.character-box .picked-box.show {
+    opacity: 1;
+}
+
+.character-box .picked-box span {
+    border-radius: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s;
+    overflow: hidden;
+}
+
+.character-box .picked-box.hide span {
+    width: 0px;
+    height: 0px;
+}
+
+.character-box .picked-box.show span {
+    width: 80px;
+    height: 80px;
+}
+
+.character-box .picked-box span svg {
+    color: #fff;
+}
+
+.character-box .picked-box span.warrior {
+    background-color: #ED4242;
+}
+
+.character-box .picked-box span.wizard {
+    background-color: #8162FF;
+}
+
+.character-box .picked-box span.cleric {
+    background-color: #76F24B;
+}
+
+.character-box .character-values {
+    width: 124px;
+    background-color: #3C3C3C;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: max-content;
+    padding: 4px 8px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.character-box .character-values p {
+    display: block;
+    color: #fff;
+    margin: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+.character-box .character-values .character-value-scale {
+    width: 105px;
+    height: 6px;
+    background-color: #2D2D2D;
+    border-radius: 7px;
+}
+
+.character-box .character-values .character-value-scale .character-value-scale-value {
+    height: 6px;
+    border-radius: 7px;
+    transition: all .2s;
+}
+
+.character-box .character-values .character-value-scale .character-value-scale-value.green {
+    background-color: #76F24B;
+}
+
+.character-box .character-values .character-value-scale .character-value-scale-value.blue {
+    background-color: #42EDE3;
+}
+
+.character-box .skills-box {
+    opacity: 0;
+    transition: all .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(43, 43, 43, 0.76);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.character-box .skill-btn {
+    width: 48px;
+    height: 48px;
+    border: none;
+    border: solid 2px #aaa;
+    padding: 0;
+    background: rgba(0,0,0,0);
+    margin: 4px;
+}
+
+.character-box .skill-btn:hover {
+    border: solid 2px #fff;
+}
+
+.character-box .skill-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+.character-box:hover .skills-box {
+    opacity: 1;
+}
+
+.character-box.red-glow-animation .skills-box, .character-box.green-glow-animation .skills-box {
+    opacity: 0!important;
+    pointer-events: none!important;
+}
+
+.character-box .cancel-skill-box {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+}
+
+.timer-box {
+    margin-bottom: 80px;
+}
+
+.timer-box .timer-text {
+    color: #fff;
+    text-align: center;
+}
+
+.timer-box .timer-scale {
+    width: 360px;
+    height: 7px;
+    border-radius: 50px;
+    background-color: #8162FF;
+    position: relative;
+}
+
+.timer-box .timer-scale .timer-scale-value {
+    height: 7px;
+    border-radius: 50px;
+    background-color: #49E5AD;
+    transition: all .2s;
+}
+
+.green-glow-animation {
+    animation: greenGlow .5s infinite alternate;
+}
+
+.green-glow-animation:hover {
+    box-shadow: 0 0 5px 5px #76F24B!important;
+}
+
+.red-glow-animation {
+    animation: redGlow .5s infinite alternate;
+    transition: all .2s;
+}
+
+.red-glow-animation:hover {
+    box-shadow: 0 0 5px 5px #ED4242!important;
+}
+
+@keyframes greenGlow {
+    from {
+        box-shadow: 0 0 5px -5px #76F24B;
+      }
+      to {
+        box-shadow: 0 0 5px 3px #76F24B;
+      }
+}
+
+@keyframes redGlow {
+    from {
+      box-shadow: 0 0 5px -5px #ED4242;
+    }
+    to {
+      box-shadow: 0 0 5px 3px #ED4242;
+    }
+}
+
+.animation-box {
+    position: absolute;
+    pointer-events: none;
+}
+
+.animation-box img {
+    width: 100%;
+    height: 100%;
+}
